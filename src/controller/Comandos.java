@@ -1,7 +1,7 @@
-package Controller;
+package controller;
 
-import Model.Position;
-import Model.Sonda;
+import model.Position;
+import model.Sonda;
 
 public class Comandos {
 	public Sonda move(Sonda sonda) {

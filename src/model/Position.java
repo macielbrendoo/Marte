@@ -1,6 +1,6 @@
-package Model;
+package model;
 
-import Enum.DirectionEnum;
+import enums.DirectionEnum;
 
 public class Position {
 	private int x;
