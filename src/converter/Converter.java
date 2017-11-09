@@ -21,7 +21,7 @@ public enum Converter {
 		return upper;
 	}
 	
-	public Converter getCommand(char c) {
+	public static Converter getCommand(char c) {
 		for(Converter com : Converter.values()) {
 			if(com.getLower() == c || com.getUpper() == c) {
 				return com;
