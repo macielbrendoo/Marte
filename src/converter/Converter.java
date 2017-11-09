@@ -1,6 +1,6 @@
 package converter;
 
-public enum converter {
+public enum Converter {
 	MOVE('m','M'),
 	LEFT('l','L'),
 	RIGHT('r','R');
@@ -8,7 +8,7 @@ public enum converter {
 	private char lower;
 	private char upper;
 	
-	converter (char lower, char upper){
+	Converter (char lower, char upper){
 		this.lower = lower;
 		this.upper = upper;
 	}
@@ -21,8 +21,8 @@ public enum converter {
 		return upper;
 	}
 	
-	public converter getCommand(char c) {
-		for(converter com : converter.values()) {
+	public Converter getCommand(char c) {
+		for(Converter com : Converter.values()) {
 			if(com.getLower() == c || com.getUpper() == c) {
 				return com;
 			}
