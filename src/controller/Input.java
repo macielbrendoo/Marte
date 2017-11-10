@@ -11,16 +11,4 @@ public class Input {
 			comm.add(Converter.getCommand(c));
 		}
 	}
-	
-	public void runArray (ArrayList<Converter> comm) {
-		for (int i = 0; i <= comm.size(); i++) {
-			switch(comm.get(i)) {
-			case MOVE:
-				
-			case RIGHT:
-			case LEFT:
-			}
-		}
-	}
-
 }
