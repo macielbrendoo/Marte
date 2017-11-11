@@ -1,8 +1,5 @@
 package converter;
 
-import controller.Comandos;
-import model.Sonda;
-
 public enum Converter {
 	MOVE('m','M'),
 	LEFT('l','L'),
@@ -31,16 +28,5 @@ public enum Converter {
 			}
 		}
 		return null;
-	}
-	
-	public void runCommand(Converter c, Sonda sonda) {
-		switch (c) {
-		case MOVE:
-			Comandos.move(sonda);
-		case LEFT:
-			Comandos.turnLeft(sonda);
-		case RIGHT:
-			Comandos.turnRight(sonda);
-		}
 	}
 }
