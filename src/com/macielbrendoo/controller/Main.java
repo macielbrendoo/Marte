@@ -27,7 +27,9 @@ public class Main {
 			entrada = scan.nextLine();
 			if (entrada != "") {
 				try {
+					System.out.println("Coordenada inicial:"+probe.getPos().getX()+","+probe.getPos().getY()+" "+probe.getPos().getDir());
 					Commands.runCommandsArray(InputConverter.stringToEnumArray(entrada), probe);
+					System.out.println("Coordenada atual:"+probe.getPos().getX()+","+probe.getPos().getY()+" "+probe.getPos().getDir());
 				} catch (IllegalArgumentException e) {
 					System.out.println("Comandos inválidos");
 				}
