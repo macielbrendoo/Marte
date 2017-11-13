@@ -1,6 +1,6 @@
-package model;
+package com.macielbrendoo.model;
 
-import enums.Direction;
+import com.macielbrendoo.enums.Direction;
 
 public class Position {
 	private int x;

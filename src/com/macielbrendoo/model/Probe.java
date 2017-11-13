@@ -1,4 +1,4 @@
-package model;
+package com.macielbrendoo.model;
 
 public class Probe {
 	private Position pos;

@@ -1,4 +1,4 @@
-package enums;
+package com.macielbrendoo.enums;
 
 public enum Direction {
 	N(0, 1) {

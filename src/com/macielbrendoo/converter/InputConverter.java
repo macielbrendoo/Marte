@@ -1,12 +1,12 @@
-package converter;
+package com.macielbrendoo.converter;
 
 import java.util.ArrayList;
 
-import enums.Commands;
+import com.macielbrendoo.enums.Commands;
 
 public class InputConverter {
 
-	public ArrayList<Commands> stringToEnumArray(String entrada) {
+	public static ArrayList<Commands> stringToEnumArray(String entrada) {
 		ArrayList<Commands> comm = new ArrayList<Commands>();
 		for (char c : entrada.toCharArray()) {
 			comm.add(Commands.getCommand(c));

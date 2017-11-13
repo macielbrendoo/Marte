@@ -1,8 +1,8 @@
-package enums;
+package com.macielbrendoo.enums;
 
 import java.util.ArrayList;
 
-import model.Probe;
+import com.macielbrendoo.model.Probe;
 
 public enum Commands {
 	MOVE('m', 'M') {
@@ -48,11 +48,11 @@ public enum Commands {
 				return com;
 			}
 		}
-		return null;
+		throw new IllegalArgumentException();
 	}
 
-	public void runCommandsArray(ArrayList<Commands> c, Probe probe) {
-		for (int i =0; i<= c.size(); i++) {
+	public static void runCommandsArray(ArrayList<Commands> c, Probe probe) {
+		for (int i =0; i< c.size(); i++) {
 			c.get(i).runCommand(probe);
 		}
 	}
