@@ -2,6 +2,8 @@ package com.macielbrendoo.tests;
 
 import org.junit.Test;
 
+import com.macielbrendoo.converter.InputConverter;
+import com.macielbrendoo.enums.Commands;
 import com.macielbrendoo.enums.Direction;
 import com.macielbrendoo.model.Position;
 import com.macielbrendoo.model.Probe;
@@ -42,5 +44,14 @@ public class Tests {
 		Direction expectedDir = Direction.E;
 		probe.turnRight();
 		Assert.assertEquals(expectedDir, probe.getPos().getDir());
+	}
+	
+	@Test
+	public void runCommandsArrayTest() {
+		Probe probe = new Probe(new Position(0,0,Direction.N));
+		Commands.runCommandsArray(InputConverter.stringToEnumArray("RMM"), probe);
+		Position expectedPos = new Position(2,0,Direction.E);
+		Assert.assertEquals(expectedPos.getX(), probe.getPos().getX());
+		Assert.assertEquals(expectedPos.getY(), probe.getPos().getY());
 	}
 }
